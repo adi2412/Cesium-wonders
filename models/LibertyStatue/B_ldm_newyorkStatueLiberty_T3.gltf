@@ -1,0 +1,397 @@
+{
+    "accessors": {
+        "accessor_30": {
+            "bufferView": "bufferView_40",
+            "byteOffset": 0,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 25527,
+            "type": "SCALAR"
+        },
+        "accessor_32": {
+            "bufferView": "bufferView_41",
+            "byteOffset": 0,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 12747,
+            "max": [
+                99.996,
+                99.996,
+                155.642
+            ],
+            "min": [
+                -99.996,
+                -99.996,
+                0
+            ],
+            "type": "VEC3"
+        },
+        "accessor_34": {
+            "bufferView": "bufferView_41",
+            "byteOffset": 152964,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 12747,
+            "max": [
+                1,
+                1,
+                1
+            ],
+            "min": [
+                -1,
+                -1,
+                -1
+            ],
+            "type": "VEC3"
+        },
+        "accessor_36": {
+            "bufferView": "bufferView_41",
+            "byteOffset": 305928,
+            "byteStride": 8,
+            "componentType": 5126,
+            "count": 12747,
+            "max": [
+                0.998703,
+                0.998095
+            ],
+            "min": [
+                0.000862,
+                0.00129497
+            ],
+            "type": "VEC2"
+        },
+        "accessor_38": {
+            "bufferView": "bufferView_41",
+            "byteOffset": 407904,
+            "byteStride": 8,
+            "componentType": 5126,
+            "count": 12747,
+            "max": [
+                1,
+                1
+            ],
+            "min": [
+                0,
+                0.002002
+            ],
+            "type": "VEC2"
+        }
+    },
+    "animations": {},
+    "asset": {
+        "generator": "collada2gltf@0b8d3804de5b437d0fb9404f344fce7a1dea3b14",
+        "premultipliedAlpha": true,
+        "profile": "WebGL 1.0.2",
+        "version": 0.8
+    },
+    "bufferViews": {
+        "bufferView_40": {
+            "buffer": "B_ldm_newyorkStatueLiberty_T3",
+            "byteLength": 51056,
+            "byteOffset": 0,
+            "target": 34963
+        },
+        "bufferView_41": {
+            "buffer": "B_ldm_newyorkStatueLiberty_T3",
+            "byteLength": 509880,
+            "byteOffset": 51056,
+            "target": 34962
+        }
+    },
+    "buffers": {
+        "B_ldm_newyorkStatueLiberty_T3": {
+            "byteLength": 560936,
+            "type": "arraybuffer",
+            "uri": "B_ldm_newyorkStatueLiberty_T3.bin"
+        }
+    },
+    "images": {
+        "B_ldm_newyorkStatueLiberty_T3_bp_L1.png": {
+            "uri": "B_ldm_newyorkStatueLiberty_T3_bp_L1.png"
+        },
+        "B_ldm_newyorkStatueLiberty_T3_dif_L1.png": {
+            "uri": "B_ldm_newyorkStatueLiberty_T3_dif_L1.png"
+        },
+        "B_ldm_newyorkStatueLiberty_T3_lm_L1.png": {
+            "uri": "B_ldm_newyorkStatueLiberty_T3_lm_L1.png"
+        },
+        "B_ldm_newyorkStatueLiberty_T3_rf_L1.png": {
+            "uri": "B_ldm_newyorkStatueLiberty_T3_rf_L1.png"
+        },
+        "B_ldm_newyorkStatueLiberty_T3_sp_L1.png": {
+            "uri": "B_ldm_newyorkStatueLiberty_T3_sp_L1.png"
+        }
+    },
+    "materials": {
+        "_1_-_Default-fx": {
+            "instanceTechnique": {
+                "technique": "technique1",
+                "values": {
+                    "ambient": "texture_B_ldm_newyorkStatueLiberty_T3_lm_L1.png",
+                    "bump": "texture_B_ldm_newyorkStatueLiberty_T3_bp_L1.png",
+                    "diffuse": "texture_B_ldm_newyorkStatueLiberty_T3_dif_L1.png",
+                    "reflective": "texture_B_ldm_newyorkStatueLiberty_T3_rf_L1.png",
+                    "shininess": 15.4723,
+                    "specular": [
+                        0.9,
+                        0.9,
+                        0.9,
+                        1
+                    ]
+                }
+            },
+            "name": "_1_-_Default"
+        }
+    },
+    "meshes": {
+        "B_ldm_newyorkStatueLiberty_T3_L1-mesh": {
+            "name": "B_ldm_newyorkStatueLiberty_T3_L1",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_34",
+                        "POSITION": "accessor_32",
+                        "TEXCOORD_0": "accessor_36",
+                        "TEXCOORD_1": "accessor_38"
+                    },
+                    "indices": "accessor_30",
+                    "material": "_1_-_Default-fx",
+                    "primitive": 4
+                }
+            ]
+        }
+    },
+    "nodes": {
+        "B_ldm_newyorkStatueLiberty_T3_L1-node": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "meshes": [
+                "B_ldm_newyorkStatueLiberty_T3_L1-mesh"
+            ],
+            "name": "B_ldm_newyorkStatueLiberty_T3_L1"
+        },
+        "node_1": {
+            "children": [
+                "B_ldm_newyorkStatueLiberty_T3_L1-node"
+            ],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "name": "Y_UP_Transform"
+        }
+    },
+    "programs": {
+        "program_0": {
+            "attributes": [
+                "a_normal",
+                "a_position",
+                "a_texcoord0",
+                "a_texcoord1"
+            ],
+            "fragmentShader": "B_ldm_newyorkStatueLiberty_T30FS",
+            "vertexShader": "B_ldm_newyorkStatueLiberty_T30VS"
+        }
+    },
+    "samplers": {
+        "sampler_0": {
+            "magFilter": 9729,
+            "minFilter": 9729,
+            "wrapS": 10497,
+            "wrapT": 10497
+        }
+    },
+    "scene": "defaultScene",
+    "scenes": {
+        "defaultScene": {
+            "nodes": [
+                "node_1"
+            ]
+        }
+    },
+    "shaders": {
+        "B_ldm_newyorkStatueLiberty_T30FS": {
+            "type": 35632,
+            "uri": "B_ldm_newyorkStatueLiberty_T30FS.glsl"
+        },
+        "B_ldm_newyorkStatueLiberty_T30VS": {
+            "type": 35633,
+            "uri": "B_ldm_newyorkStatueLiberty_T30VS.glsl"
+        }
+    },
+    "skins": {},
+    "techniques": {
+        "technique1": {
+            "parameters": {
+                "ambient": {
+                    "type": 35678
+                },
+                "bump": {
+                    "type": 35678
+                },
+                "diffuse": {
+                    "type": 35678
+                },
+                "modelViewMatrix": {
+                    "semantic": "MODELVIEW",
+                    "type": 35676
+                },
+                "normal": {
+                    "semantic": "NORMAL",
+                    "type": 35665
+                },
+                "normalMatrix": {
+                    "semantic": "MODELVIEWINVERSETRANSPOSE",
+                    "type": 35675
+                },
+                "position": {
+                    "semantic": "POSITION",
+                    "type": 35665
+                },
+                "projectionMatrix": {
+                    "semantic": "PROJECTION",
+                    "type": 35676
+                },
+                "reflective": {
+                    "type": 35678
+                },
+                "shininess": {
+                    "type": 5126
+                },
+                "specular": {
+                    "type": 35666
+                },
+                "texcoord0": {
+                    "semantic": "TEXCOORD_1",
+                    "type": 35664
+                },
+                "texcoord1": {
+                    "semantic": "TEXCOORD_0",
+                    "type": 35664
+                }
+            },
+            "pass": "defaultPass",
+            "passes": {
+                "defaultPass": {
+                    "details": {
+                        "commonProfile": {
+                            "extras": {
+                                "doubleSided": false
+                            },
+                            "lightingModel": "Blinn",
+                            "parameters": [
+                                "ambient",
+                                "bump",
+                                "diffuse",
+                                "modelViewMatrix",
+                                "normalMatrix",
+                                "projectionMatrix",
+                                "reflective",
+                                "shininess",
+                                "specular"
+                            ],
+                            "texcoordBindings": {
+                                "ambient": "TEXCOORD_1",
+                                "bump": "TEXCOORD_0",
+                                "diffuse": "TEXCOORD_0",
+                                "reflective": "TEXCOORD_0"
+                            }
+                        },
+                        "type": "COLLADA-1.4.1/commonProfile"
+                    },
+                    "instanceProgram": {
+                        "attributes": {
+                            "a_normal": "normal",
+                            "a_position": "position",
+                            "a_texcoord0": "texcoord0",
+                            "a_texcoord1": "texcoord1"
+                        },
+                        "program": "program_0",
+                        "uniforms": {
+                            "u_ambient": "ambient",
+                            "u_bump": "bump",
+                            "u_diffuse": "diffuse",
+                            "u_modelViewMatrix": "modelViewMatrix",
+                            "u_normalMatrix": "normalMatrix",
+                            "u_projectionMatrix": "projectionMatrix",
+                            "u_reflective": "reflective",
+                            "u_shininess": "shininess",
+                            "u_specular": "specular"
+                        }
+                    },
+                    "states": {
+                        "enable": [
+                            2884,
+                            2929
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "textures": {
+        "texture_B_ldm_newyorkStatueLiberty_T3_bp_L1.png": {
+            "format": 6408,
+            "internalFormat": 6408,
+            "sampler": "sampler_0",
+            "source": "B_ldm_newyorkStatueLiberty_T3_bp_L1.png",
+            "target": 3553,
+            "type": 5121
+        },
+        "texture_B_ldm_newyorkStatueLiberty_T3_dif_L1.png": {
+            "format": 6408,
+            "internalFormat": 6408,
+            "sampler": "sampler_0",
+            "source": "B_ldm_newyorkStatueLiberty_T3_dif_L1.png",
+            "target": 3553,
+            "type": 5121
+        },
+        "texture_B_ldm_newyorkStatueLiberty_T3_lm_L1.png": {
+            "format": 6408,
+            "internalFormat": 6408,
+            "sampler": "sampler_0",
+            "source": "B_ldm_newyorkStatueLiberty_T3_lm_L1.png",
+            "target": 3553,
+            "type": 5121
+        },
+        "texture_B_ldm_newyorkStatueLiberty_T3_rf_L1.png": {
+            "format": 6408,
+            "internalFormat": 6408,
+            "sampler": "sampler_0",
+            "source": "B_ldm_newyorkStatueLiberty_T3_rf_L1.png",
+            "target": 3553,
+            "type": 5121
+        }
+    }
+}

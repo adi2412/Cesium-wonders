@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">  <!-- Use Chrome Frame in IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="description" content="Use the mouse to select and manipulate objects in the scene.">
+    <meta name="cesium-sandcastle-labels" content="Showcases">
+    <title>Cesium Demo</title>
+    <script type="text/javascript" src="Sandcastle-header.js"></script>
+    <script type="text/javascript" src="ThirdParty/requirejs-2.1.9/require.js"></script>
+    <script type="text/javascript">
+    require.config({
+        baseUrl : 'Source/',
+        waitSeconds : 0
+    });
+    </script>
+</head>
+<body class="sandcastle-loading" data-sandcastle-bucket="bucket-requirejs.html">
+<style>
+    @import url(templates/bucket.css);
+</style>
+<div id="cesiumContainer" class="fullSize"></div>
+<div id="loadingOverlay"><h1>Loading...</h1></div>
+<div id="toolbar"></div>
+<script id="cesium_sandcastle_script">
+function startup(Cesium) {
+    "use strict";
+//Sandcastle_Begin
+var viewer = new Cesium.Viewer('cesiumContainer', {
+});
+
+var desc = {
+    "Giza": "The Great Pyramid of Giza (also known as the Pyramid of Khufu or the Pyramid of Cheops) is the oldest and largest of the three pyramids in the Giza Necropolis bordering what is now El Giza, Egypt. It is the oldest of the Seven Wonders of the Ancient World, and the only one to remain largely intact.",
+    "Pisa": "The Leaning Tower of Pisa (Italian: Torre pendente di Pisa) or simply the Tower of Pisa (Torre di Pisa) is the campanile, or freestanding bell tower, of the cathedral of the Italian city of Pisa, known worldwide for its unintended tilt to one side. It is situated behind the Cathedral and is the third oldest structure in Pisa's Cathedral Square (Piazza del Duomo) after the Cathedral and the Baptistry. The tower's tilt began during construction, caused by an inadequate foundation on ground too soft on one side to properly support the structure's weight. The tilt increased in the decades before the structure was completed, and gradually increased until the structure was stabilized (and the tilt partially corrected) by efforts in the late 20th and early 21st centuries.",
+    "Eiffel": "The Eiffel Tower is an iron lattice tower located on the Champ de Mars in Paris. It was named after the engineer Gustave Eiffel, whose company designed and built the tower. Erected in 1889 as the entrance arch to the 1889 World's Fair, it was initially criticised by some of France's leading artists and intellectuals for its design, but has become both a global cultural icon of France and one of the most recognizable structures in the world. The tower is the tallest structure in Paris and the most-visited paid monument in the world; 6.98 million people ascended it in 2011. The tower received its 250 millionth visitor in 2010.",
+    "Opera": "The Sydney Opera House is a multi-venue performing arts centre in Sydney, New South Wales, Australia. Situated on Bennelong Point in Sydney Harbour, close to the Sydney Harbour Bridge, the facility is adjacent to the Sydney central business district and the Royal Botanic Gardens, between Sydney and Farm Coves.",
+    "Colosseum": "The Colosseum or Coliseum, also known as the Flavian Amphitheatre is an elliptical amphitheatre in the centre of the city of Rome, Italy. Built of concrete and stone, it is the largest amphitheatre in the world, and is considered one of the greatest works of architecture and engineering.",
+    "Liberty": "The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor in New York City, in the United States. The statue, designed by Frédéric Auguste Bartholdi, a French sculptor and dedicated on October 28, 1886, was a gift to the United States from the people of France. The statue is of a robed female figure representing Libertas, the Roman goddess, who bears a torch and a tabula ansata (a tablet evoking the law) upon which is inscribed the date of the American Declaration of Independence, July 4, 1776. A broken chain lies at her feet. The statue is an icon of freedom and of the United States: a welcoming signal to immigrants arriving from abroad."
+}
+
+function createModel(title, name, url, lat, long, pos) {
+
+    var position = Cesium.Cartesian3.fromDegrees(long, lat);
+    var heading = Cesium.Math.toRadians(pos);
+    var pitch = 0;
+    var roll = 0;
+    var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, heading, pitch, roll);
+
+    var entity = viewer.entities.add({
+        name : name,
+        position : position,
+        orientation : orientation,
+        description: desc[name],
+        model : {
+            uri : url,
+        }
+    });
+    viewer.trackedEntity = entity;
+    viewer.selectedEntity = entity;
+    viewer.flyTo(entity);
+    
+}
+
+var options = [{
+    text : 'Pyramids of Giza',
+    onselect : function() {
+        createModel('Pyramids of Giza', 'Giza', 'models/Giza/B_ldm_CairoPyramidKephrenSphinx_T3.gltf',  29.979234, 31.134202, -90);
+    }
+}, {
+    text : 'Leaning Tower of Pisa',
+    onselect : function() {
+        createModel('Leaning Tower of Pisa', 'Pisa', 'models/Pisa/pisa.gltf',  43.722952, 10.396597, -90);
+    }
+}, {
+    text : 'Eiffel Tower',
+    onselect : function() {
+        createModel('Eiffel Tower', 'Eiffel', 'models/Eiffel/B_ldm_parisEiffelTour_T3.gltf',  48.85837, 2.294481, -60);
+    }
+}, {
+    text : 'Sydney Opera House',
+    onselect : function() {
+        createModel('Sydney Opera House', 'Opera', 'models/Opera/B_ldm_sydneyOperaHouse_T3.gltf',  -33.856898, 151.215281, 190);
+    }
+}, {
+    text : 'Colosseum',
+    onselect : function() {
+        createModel('Colosseum', 'Colosseum', 'models/Colosseum/B_ldm_RomeColosseum_T3.gltf',  41.89021, 12.492231, 0);
+    }
+}, {
+    text : 'Statue of Liberty',
+    onselect : function() {
+        createModel('Statue of Liberty', 'Liberty', 'models/LibertyStatue/B_ldm_newyorkStatueLiberty_T3.gltf', 40.689249, -74.0445, -45);
+    }
+}];
+
+Sandcastle.addToolbarMenu(options);
+//Sandcastle_End
+    Sandcastle.finishedLoading();
+}
+if (typeof Cesium !== "undefined") {
+    startup(Cesium);
+} else if (typeof require === "function") {
+    require(["Cesium"], startup);
+}
+</script>
+</body>
+</html>

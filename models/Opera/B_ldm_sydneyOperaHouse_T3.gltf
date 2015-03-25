@@ -1,0 +1,433 @@
+{
+    "accessors": {
+        "accessor_30": {
+            "bufferView": "bufferView_40",
+            "byteOffset": 0,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 23751,
+            "type": "SCALAR"
+        },
+        "accessor_32": {
+            "bufferView": "bufferView_41",
+            "byteOffset": 0,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 9243,
+            "max": [
+                60,
+                80,
+                55.1227
+            ],
+            "min": [
+                -60,
+                -80,
+                -1.708e-05
+            ],
+            "type": "VEC3"
+        },
+        "accessor_34": {
+            "bufferView": "bufferView_41",
+            "byteOffset": 110916,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 9243,
+            "max": [
+                1,
+                1,
+                1
+            ],
+            "min": [
+                -1,
+                -1,
+                -1
+            ],
+            "type": "VEC3"
+        },
+        "accessor_36": {
+            "bufferView": "bufferView_41",
+            "byteOffset": 221832,
+            "byteStride": 8,
+            "componentType": 5126,
+            "count": 9243,
+            "max": [
+                0.99915,
+                0.999195
+            ],
+            "min": [
+                0.00124,
+                0.000775993
+            ],
+            "type": "VEC2"
+        },
+        "accessor_38": {
+            "bufferView": "bufferView_41",
+            "byteOffset": 295776,
+            "byteStride": 8,
+            "componentType": 5126,
+            "count": 9243,
+            "max": [
+                0.995492,
+                0.991734
+            ],
+            "min": [
+                0.005757,
+                0.00392699
+            ],
+            "type": "VEC2"
+        }
+    },
+    "animations": {},
+    "asset": {
+        "generator": "collada2gltf@0b8d3804de5b437d0fb9404f344fce7a1dea3b14",
+        "premultipliedAlpha": true,
+        "profile": "WebGL 1.0.2",
+        "version": 0.8
+    },
+    "bufferViews": {
+        "bufferView_40": {
+            "buffer": "B_ldm_sydneyOperaHouse_T3",
+            "byteLength": 47504,
+            "byteOffset": 0,
+            "target": 34963
+        },
+        "bufferView_41": {
+            "buffer": "B_ldm_sydneyOperaHouse_T3",
+            "byteLength": 369720,
+            "byteOffset": 47504,
+            "target": 34962
+        }
+    },
+    "buffers": {
+        "B_ldm_sydneyOperaHouse_T3": {
+            "byteLength": 417224,
+            "type": "arraybuffer",
+            "uri": "B_ldm_sydneyOperaHouse_T3.bin"
+        }
+    },
+    "images": {
+        "B_ldm_sydneyOperaHouse_T3_bp_L1.png": {
+            "uri": "B_ldm_sydneyOperaHouse_T3_bp_L1.png"
+        },
+        "B_ldm_sydneyOperaHouse_T3_dif_L1.png": {
+            "uri": "B_ldm_sydneyOperaHouse_T3_dif_L1.png"
+        },
+        "B_ldm_sydneyOperaHouse_T3_lm_L1.png": {
+            "uri": "B_ldm_sydneyOperaHouse_T3_lm_L1.png"
+        },
+        "B_ldm_sydneyOperaHouse_T3_rf_L1.png": {
+            "uri": "B_ldm_sydneyOperaHouse_T3_rf_L1.png"
+        },
+        "B_ldm_sydneyOperaHouse_T3_sp_L1.png": {
+            "uri": "B_ldm_sydneyOperaHouse_T3_sp_L1.png"
+        }
+    },
+    "lights": {
+        "ambient-environment-light": {
+            "ambient": {
+                "color": [
+                    0.027451,
+                    0.027451,
+                    0.027451
+                ]
+            },
+            "type": "ambient"
+        }
+    },
+    "materials": {
+        "B_ldm_sydneyOperaHouse_T3_L1-fx": {
+            "instanceTechnique": {
+                "technique": "technique1",
+                "values": {
+                    "ambient": "texture_B_ldm_sydneyOperaHouse_T3_lm_L1.png",
+                    "bump": "texture_B_ldm_sydneyOperaHouse_T3_bp_L1.png",
+                    "diffuse": "texture_B_ldm_sydneyOperaHouse_T3_dif_L1.png",
+                    "reflective": "texture_B_ldm_sydneyOperaHouse_T3_rf_L1.png",
+                    "shininess": 53.2402,
+                    "specular": [
+                        0.9,
+                        0.9,
+                        0.9,
+                        1
+                    ]
+                }
+            },
+            "name": "B_ldm_sydneyOperaHouse_T3_L1"
+        }
+    },
+    "meshes": {
+        "B_ldm_sydneyOperaHouse_T3_L1-mesh": {
+            "name": "B_ldm_sydneyOperaHouse_T3_L1",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_34",
+                        "POSITION": "accessor_32",
+                        "TEXCOORD_0": "accessor_36",
+                        "TEXCOORD_1": "accessor_38"
+                    },
+                    "indices": "accessor_30",
+                    "material": "B_ldm_sydneyOperaHouse_T3_L1-fx",
+                    "primitive": 4
+                }
+            ]
+        }
+    },
+    "nodes": {
+        "B_ldm_sydneyOperaHouse_T3_L1-node": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "meshes": [
+                "B_ldm_sydneyOperaHouse_T3_L1-mesh"
+            ],
+            "name": "B_ldm_sydneyOperaHouse_T3_L1"
+        },
+        "VisualSceneNode": {
+            "children": [],
+            "light": "ambient-environment-light",
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "name": "VisualSceneNode"
+        },
+        "node_2": {
+            "children": [
+                "B_ldm_sydneyOperaHouse_T3_L1-node",
+                "VisualSceneNode"
+            ],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "name": "Y_UP_Transform"
+        }
+    },
+    "programs": {
+        "program_0": {
+            "attributes": [
+                "a_normal",
+                "a_position",
+                "a_texcoord0",
+                "a_texcoord1"
+            ],
+            "fragmentShader": "B_ldm_sydneyOperaHouse_T30FS",
+            "vertexShader": "B_ldm_sydneyOperaHouse_T30VS"
+        }
+    },
+    "samplers": {
+        "sampler_0": {
+            "magFilter": 9729,
+            "minFilter": 9729,
+            "wrapS": 10497,
+            "wrapT": 10497
+        }
+    },
+    "scene": "defaultScene",
+    "scenes": {
+        "defaultScene": {
+            "nodes": [
+                "node_2"
+            ]
+        }
+    },
+    "shaders": {
+        "B_ldm_sydneyOperaHouse_T30FS": {
+            "type": 35632,
+            "uri": "B_ldm_sydneyOperaHouse_T30FS.glsl"
+        },
+        "B_ldm_sydneyOperaHouse_T30VS": {
+            "type": 35633,
+            "uri": "B_ldm_sydneyOperaHouse_T30VS.glsl"
+        }
+    },
+    "skins": {},
+    "techniques": {
+        "technique1": {
+            "parameters": {
+                "ambient": {
+                    "type": 35678
+                },
+                "bump": {
+                    "type": 35678
+                },
+                "diffuse": {
+                    "type": 35678
+                },
+                "modelViewMatrix": {
+                    "semantic": "MODELVIEW",
+                    "type": 35676
+                },
+                "normal": {
+                    "semantic": "NORMAL",
+                    "type": 35665
+                },
+                "normalMatrix": {
+                    "semantic": "MODELVIEWINVERSETRANSPOSE",
+                    "type": 35675
+                },
+                "position": {
+                    "semantic": "POSITION",
+                    "type": 35665
+                },
+                "projectionMatrix": {
+                    "semantic": "PROJECTION",
+                    "type": 35676
+                },
+                "reflective": {
+                    "type": 35678
+                },
+                "shininess": {
+                    "type": 5126
+                },
+                "specular": {
+                    "type": 35666
+                },
+                "texcoord0": {
+                    "semantic": "TEXCOORD_1",
+                    "type": 35664
+                },
+                "texcoord1": {
+                    "semantic": "TEXCOORD_0",
+                    "type": 35664
+                }
+            },
+            "pass": "defaultPass",
+            "passes": {
+                "defaultPass": {
+                    "details": {
+                        "commonProfile": {
+                            "extras": {
+                                "doubleSided": false
+                            },
+                            "lightingModel": "Blinn",
+                            "parameters": [
+                                "ambient",
+                                "bump",
+                                "diffuse",
+                                "modelViewMatrix",
+                                "normalMatrix",
+                                "projectionMatrix",
+                                "reflective",
+                                "shininess",
+                                "specular"
+                            ],
+                            "texcoordBindings": {
+                                "ambient": "TEXCOORD_1",
+                                "bump": "TEXCOORD_0",
+                                "diffuse": "TEXCOORD_0",
+                                "reflective": "TEXCOORD_0"
+                            }
+                        },
+                        "type": "COLLADA-1.4.1/commonProfile"
+                    },
+                    "instanceProgram": {
+                        "attributes": {
+                            "a_normal": "normal",
+                            "a_position": "position",
+                            "a_texcoord0": "texcoord0",
+                            "a_texcoord1": "texcoord1"
+                        },
+                        "program": "program_0",
+                        "uniforms": {
+                            "u_ambient": "ambient",
+                            "u_bump": "bump",
+                            "u_diffuse": "diffuse",
+                            "u_modelViewMatrix": "modelViewMatrix",
+                            "u_normalMatrix": "normalMatrix",
+                            "u_projectionMatrix": "projectionMatrix",
+                            "u_reflective": "reflective",
+                            "u_shininess": "shininess",
+                            "u_specular": "specular"
+                        }
+                    },
+                    "states": {
+                        "enable": [
+                            2884,
+                            2929
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "textures": {
+        "texture_B_ldm_sydneyOperaHouse_T3_bp_L1.png": {
+            "format": 6408,
+            "internalFormat": 6408,
+            "sampler": "sampler_0",
+            "source": "B_ldm_sydneyOperaHouse_T3_bp_L1.png",
+            "target": 3553,
+            "type": 5121
+        },
+        "texture_B_ldm_sydneyOperaHouse_T3_dif_L1.png": {
+            "format": 6408,
+            "internalFormat": 6408,
+            "sampler": "sampler_0",
+            "source": "B_ldm_sydneyOperaHouse_T3_dif_L1.png",
+            "target": 3553,
+            "type": 5121
+        },
+        "texture_B_ldm_sydneyOperaHouse_T3_lm_L1.png": {
+            "format": 6408,
+            "internalFormat": 6408,
+            "sampler": "sampler_0",
+            "source": "B_ldm_sydneyOperaHouse_T3_lm_L1.png",
+            "target": 3553,
+            "type": 5121
+        },
+        "texture_B_ldm_sydneyOperaHouse_T3_rf_L1.png": {
+            "format": 6408,
+            "internalFormat": 6408,
+            "sampler": "sampler_0",
+            "source": "B_ldm_sydneyOperaHouse_T3_rf_L1.png",
+            "target": 3553,
+            "type": 5121
+        }
+    }
+}
