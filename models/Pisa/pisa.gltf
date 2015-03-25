@@ -1955,16 +1955,16 @@
     },
     "images": {
         "ID259": {
-            "uri": "pisa/__auto_4.jpg"
+            "uri": "pisa/auto_4.jpg"
         },
         "ID272": {
-            "uri": "pisa/__auto_5.jpg"
+            "uri": "pisa/auto_5.jpg"
         },
         "ID285": {
-            "uri": "pisa/__auto_6.jpg"
+            "uri": "pisa/auto_6.jpg"
         },
         "ID310": {
-            "uri": "pisa/__auto_7.jpg"
+            "uri": "pisa/auto_7.jpg"
         }
     },
     "materials": {
@@ -2057,7 +2057,7 @@
                     ]
                 }
             },
-            "name": "__auto_1"
+            "name": "auto_1"
         },
         "ID250": {
             "instanceTechnique": {
@@ -2071,7 +2071,7 @@
                     ]
                 }
             },
-            "name": "__auto_2"
+            "name": "auto_2"
         },
         "ID258": {
             "instanceTechnique": {
@@ -2080,7 +2080,7 @@
                     "diffuse": "texture_ID259"
                 }
             },
-            "name": "__auto_4"
+            "name": "auto_4"
         },
         "ID271": {
             "instanceTechnique": {
@@ -2089,7 +2089,7 @@
                     "diffuse": "texture_ID272"
                 }
             },
-            "name": "__auto_5"
+            "name": "auto_5"
         },
         "ID284": {
             "instanceTechnique": {
@@ -2098,7 +2098,7 @@
                     "diffuse": "texture_ID285"
                 }
             },
-            "name": "__auto_6"
+            "name": "auto_6"
         },
         "ID309": {
             "instanceTechnique": {
@@ -2107,7 +2107,7 @@
                     "diffuse": "texture_ID310"
                 }
             },
-            "name": "__auto_7"
+            "name": "auto_7"
         },
         "ID34": {
             "instanceTechnique": {
